@@ -6,8 +6,7 @@
     <br /><br />
     <app-progress />
     <br /><br />
-    <h3 class="text-center">Eklenen Ürünlerin Listesi</h3>
-    <hr />
+
     <app-products />
   </div>
 </template>
@@ -22,13 +21,6 @@ export default {
     appNewProduct: NewProduct,
     appProgress: Progress,
     appProducts: Products,
-  },
-
-  methods: {
-    onChange(e) {
-      const file = e.target.files[0];
-      this.product.selectedImage = URL.createObjectURL(file);
-    },
   },
 };
 </script>

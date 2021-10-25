@@ -5,6 +5,7 @@ export const eventBus = new Vue({
   methods: {
     productAdded(value) {},
   },
+  progressBarUpdated(value) {},
 });
 new Vue({
   el: '#app',
